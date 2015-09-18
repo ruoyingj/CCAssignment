@@ -5,6 +5,7 @@ public class Solution01 {
 		//lock a certain Node key and compare all the node with its.
 		//element means the following Nodes by key
 		//nextElement is the next element of element
+        //
 		LinkedListNode key = a;
 		LinkedListNode  element= a;
 		LinkedListNode nextElement = a ;
