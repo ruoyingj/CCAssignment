@@ -19,12 +19,13 @@ public class Solution07 {
 		int distance = Math.abs(size_a - size_b);
 		if(size_a > size_b){
 			int step = 0;
-			while(step<distance){a = a.next;step++;}}
-			else{
-				int step = 0;
-				while(step < distance){
-					b = b.next;
-					step++;
+			while(step<distance){a = a.next;step++;}
+		}
+		else{
+			int step = 0;
+			while(step < distance){
+				b = b.next;
+				step++;
 				}
 			}
 		while(a!=null&&b!=null&& a!=b){

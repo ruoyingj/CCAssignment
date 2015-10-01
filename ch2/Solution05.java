@@ -11,14 +11,19 @@ public class Solution05 {
 		
 		while(a != null || b != null){
 			int temp = 0;
-			
+			//There are three situations. 
+			// When a is null. The sum should be the value of b plus flag.
 			if(a == null){
 				temp += (b.value + flag)%10;
 				flag = (b.value + flag)/10;
-			}else if (b == null){
+			}
+			// When b is null. The sum should be the value of a plus flag.
+			else if (b == null){
 				temp += (a.value + flag)%10;
 				flag = (a.value + flag)/10;
-			}else {
+			}
+			//when a and b are both not null. The sum should be the value of a plus b plus flag.
+			else {
 				temp += (a.value + b.value + flag) % 10;
 				flag = (a.value + b.value + flag) /10;
 			}
